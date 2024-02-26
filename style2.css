@@ -1,0 +1,535 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: myFirstFont;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Sansation_Regular.ttf);
+}
+
+@font-face {
+    font-family: SansationLi;
+    src: url(Sansation_Light.ttf);
+}
+
+body{
+    background: url('images/background5.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 1060px;
+    position: relative;
+}
+
+/* Övre menyn av sidan --------------------------------------------------------------------------------------------------------------- */
+
+.container1{
+    height: 80px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.box{
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+    font-family: SansationLi;
+    color: rgba(0, 74, 186, 0.661);
+    font-size: 35px;
+    margin-left: 6%;
+    margin-top: 1%;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#line{
+    border-left: 3px solid rgba(0, 74, 186, 0.661); 
+    height: 55px; 
+    top: 10px;
+    left: 18.5%;
+    position: absolute;
+}
+
+ul.navbar {
+    float: right;
+    margin-right: 300px;
+}
+
+ul.navbar li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+ul.navbar li a{
+    color: rgba(0, 74, 186, 0.661);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none
+}
+
+ul.navbar li a:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(28, 118, 188, 0.9);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;  
+}
+
+/* CONTAINER 2 FÖRETAGSDELEN  --------------------------------------------------------------------------------------------------------------- */
+
+.container2{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+
+.box1{
+    width: 94%; 
+    margin-top: 3%; 
+    margin-left: 3%; 
+    height: 400px;
+    background-color: rgb(132, 132, 132, 0.43); 
+
+    display: flex; 
+    position: absolute;
+}
+
+#company{
+    font-size: 60px;
+    color: white;
+    padding: 2% 3%;
+    position: absolute;
+}
+
+#line1{
+    height: 3px; 
+    width: 17.5%;  
+    margin-top: 7%;  
+    margin-left: 2%;
+
+    background: white; 
+    position: absolute;  
+}
+
+#line2{
+    border-left: 3px solid white; 
+    height: 90%; 
+
+    position: absolute;
+    top: 4%;
+    left: 22%;
+}
+
+#glappfri{
+    width: 14%;
+    height: 25%;
+    margin-left: 4%;
+    margin-top: 9%;
+    display: flex; 
+    position: absolute;
+
+}
+
+#Glappfrinu{
+    position: absolute;
+}
+
+#eketorn{
+    width: 20%;
+    height: 25%;
+    margin-left: 2.5%;
+    margin-top: 14%;
+    display: flex; 
+    position: absolute;
+}
+
+#pic1{
+    position: absolute;
+}
+
+.infobox{
+    width: 68%;
+    height: 100%;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+.information{
+    color: white;
+    font-size: 28px;
+}
+
+ul.information li{
+    padding: 8px;
+}
+
+/* CONTAINER 2 BILVÄGEN PÅ SIDAN  --------------------------------------------------------------------------------------------------------------- */
+
+.container3{
+    width: 100%;
+    height: 195px;
+    display: flex;
+    position: relative;
+}
+#cartrack{
+    width: 20%;
+    height: 150px;
+    opacity: 0.6;
+    position: absolute;
+}
+#cartrack2{
+    width: 20%;
+    margin-left: 20%;
+    height: 150px;
+    opacity: 0.6;
+    position: absolute;
+}
+#cartrack3{
+    width: 20%;
+    height: 150px;
+    margin-left: 40%;
+    opacity: 0.6;
+    position: absolute;
+}
+#cartrack4{
+    width: 20%;
+    height: 150px;
+    margin-left: 60%;
+    opacity: 0.6;
+    position: absolute;
+}
+#cartrack5{
+    width: 20%;
+    height: 150px;
+    margin-left: 80%;
+    opacity: 0.6;
+    position: absolute;
+}
+
+/* CONTAINER 4 NEDRE MENYN AV SIDAN  --------------------------------------------------------------------------------------------------------------- */
+
+.container4{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    position: relative;
+    margin-top: 6.2%;
+}
+
+.nedre_meny{
+    width: 100%;
+    height: 100px;
+    margin-top: 1%;
+    box-sizing: border-box; 
+    display: flex; 
+    position: relative;
+    align-items: top; 
+    justify-content: center; 
+    color: rgba(0, 74, 186, 0.661);
+    font-size: 32px;
+}
+
+#products{
+    margin-right: 70%;
+    position: absolute;
+}
+#language{
+    position: absolute;
+}
+#company1{
+    margin-left: 70%;
+    position: absolute;
+}
+#line3{
+    height: 3px; 
+    width: 15%;  
+    background: rgba(0, 74, 186, 0.661); 
+    position: absolute;  
+    margin-top: 2.3%;
+    margin-right: 70%;
+}
+#line4{
+    height: 3px; 
+    width: 18%;  
+    background: rgba(0, 74, 186, 0.661); 
+    position: absolute;  
+    margin-top: 2.5%;
+    margin-left: 70%;
+}
+#line5{
+    height: 3px; 
+    width: 17%;  
+    background: rgba(0, 74, 186, 0.661); 
+    position: absolute;  
+    margin-top: 2.5%;
+}
+#order1{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3%;
+    color: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+    margin-right: 70%;
+    text-decoration: none;
+    z-index: 1;
+}
+#order1:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+#English{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3%;
+    text-decoration: none;
+    color: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+    z-index: 1;
+}
+#English:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+#about{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3%;
+    color: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+    margin-left: 70%;
+    text-decoration: none;
+    z-index: 1;
+}
+#about:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+.copyright{
+    width: 100%;
+    height: 160px;
+    box-sizing: border-box; 
+    display: flex; 
+    position: absolute;
+    align-items: last baseline; 
+    justify-content: center; 
+}
+#AB{
+    font-size: 15px;
+    color: rgba(0, 74, 186, 0.661);
+}
+
+/* här är kod för mobil responsivitet ----------------------------------------------------------------------------- */
+
+@media (max-width: 414px) {
+
+    body{
+        height: 1080px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    ul.navbar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(28, 118, 188, 0.9);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+    ul.navbar li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    ul.navbar li a{
+        color: white;
+        font-size: 20px;
+
+    }
+    ul.navbar li a:hover{
+        background: none;
+        color: black;
+        transition: 0.4 ease-in-out;
+    }
+    #check:checked ~ ul.navbar{
+        left: 0;
+    }
+    
+    #line {
+        margin-left: 20%;
+    }
+    #logo{
+        font-size: 25px;
+        margin-top: 5%;
+    }
+    .container1{
+        margin-bottom: 5%;
+    }
+
+    /* CONTAINER 2 FÖRETAGET INFO ----------------------------------------------------------------------------- */
+
+    .container2{
+        height: 680px;
+    }
+    
+    .box1{
+        height:650px;
+        justify-content: center; 
+    }
+    #company{
+        font-size: 50px;
+    }
+    #line1{
+        margin-top: 18%;
+        height: 2px;
+        width: 80%;
+    }
+    #line2{
+        display: none;
+    }
+
+    #glappfri{
+        margin-right: 0%;
+        margin-top: 23%;
+        margin-left: 0;
+        width: 59%;
+        height: 9%;
+    }
+    #eketorn{
+        width: 77%;
+        height: 14%;
+        margin-top: 43%;
+        margin-left: 0;
+    }
+    .infobox{
+        width: 90%;
+        margin-top: 73%;
+        margin-left: 5%;
+        height: 300px;
+    }
+    .information{
+        color: white;
+        font-size: 18px;
+    }
+    ul.information li{
+        padding: 6px;
+    }
+
+    /* CONTAINER 3 BILVÄG OCH COM ICONS ----------------------------------------------------------------------------- */
+
+    .container3{
+        height: 120px;
+    }
+
+    #cartrack{
+        width: 33.3%;
+        height: 100px;
+    }
+    #cartrack2{
+        width: 33.3%;
+        height: 100px;
+        margin-left: 33.3%
+    }
+    #cartrack3{
+        width: 33.3%;
+        height: 100px;
+        margin-left: 66.6%
+    }
+    #cartrack4{
+        display: none;
+    }
+    #cartrack5{
+        display: none;
+    }
+
+    /* CONTAINER 4 NEDRE MENYN ----------------------------------------------------------------------------- */
+
+    .container4{
+        width: 100%;
+        height: 180px;
+        background-color: white;
+        display: flex;
+        position: relative;
+        margin-top: 0%;
+    }
+
+    #products{
+        font-size: 22px;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    #line4{
+        height: 2px;
+        width: 22%;
+        margin-left: 0;
+        margin-right: 68%;  
+        margin-top: 13%;
+    }
+    #order1{
+        font-size: 18px;
+        margin-top: 15%;
+        margin-right: 68%;
+    }
+    #language{
+        font-size: 18px;
+        margin-top: 5.5%;
+    }
+    #line5{
+        height: 2px; 
+        width: 22%; 
+        margin-top: 13%;
+    }
+    #English{
+        font-size: 18px;
+        margin-top: 15%;
+        z-index: 1;
+    }
+    #company1{
+        margin-left: 70%;
+        font-size: 22px;
+        margin-top: 5%;
+    }
+    #line3{
+        height: 2px; 
+        width: 22%;  
+        margin-top: 13%;
+        margin-right: 0 ;
+        margin-left: 68%;
+    }
+    #about{
+        font-size: 15px;
+        margin-top: 15%;
+        margin-left: 68%;
+        z-index: 1;
+    }
+    #AB{
+        font-size: 12px;
+    }
+}

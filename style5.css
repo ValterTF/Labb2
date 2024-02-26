@@ -1,0 +1,726 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: myFirstFont;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Sansation_Regular.ttf);
+}
+
+@font-face {
+    font-family: SansationLi;
+    src: url(Sansation_Light.ttf);
+}
+
+body{
+    background: url('images/background5.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 2000px;
+    position: relative;
+}
+
+/* Övre menyn av sidan --------------------------------------------------------------------------------------------------------------- */
+
+.container1{
+    height: 80px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.box{
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+#logo{
+    font-family: SansationLi;
+    color: rgba(0, 74, 186, 0.661);
+    font-size: 35px;
+    margin-left: 6%;
+    margin-top: 1%;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+}
+#line{
+    border-left: 3px solid rgba(0, 74, 186, 0.661); 
+    height: 55px; 
+    top: 10px;
+    left: 18.5%;
+    position: absolute;
+}
+ul.navbar {
+    float: right;
+    margin-right: 300px;
+}
+ul.navbar li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+ul.navbar li a{
+    color: rgba(0, 74, 186, 0.661);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none
+}
+ul.navbar li a:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(28, 118, 188, 0.9);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;  
+}
+
+/* CONTAINER 2 PRDOUKT TEXT OBS! --------------------------------------------------------------------------------------------------------------- */
+
+.container2{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+} 
+
+.box1{
+    margin: 3% 3%;
+    width: 94%; 
+    height: 400px;
+    background-color: rgb(132, 132, 132, 0.43); 
+    display: flex; 
+    position: absolute;
+}
+#products1{
+    font-size: 50px;
+    color: white;
+    margin: 3% 5%;
+    position: absolute;
+}
+
+#line1{
+    height: 3px; 
+    width: 17.5%;  
+    margin-top: 7%;  
+    margin-left: 2%;
+    background: white; 
+    position: absolute;  
+}
+#line2{
+    border-left: 3px solid white; 
+    height: 85%; 
+    position: absolute;
+    top: 6%;
+    left: 22%;
+}
+#rectangle{
+    background-color: rgb(28, 118, 188, 0.9); 
+    height: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    position: absolute;
+    justify-content: center;
+    bottom: 0;
+}
+#OBS{
+    font-size: 30px;
+    color: white;
+    width: 20%;
+    text-align: center;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    margin: 10% 1%;
+}
+
+.infobox{
+    width: 68%;
+    height: 100%;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+.information{
+    color: white;
+    font-size: 22px;
+}
+
+ul.information li{
+    padding: 14px;
+}
+
+/*  CONTAINER 3 FILTER BOXEN  --------------------------------------------------------------------------------------------------------------- */
+
+.container3{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+}
+
+.box2{
+    margin: 2% 3%;
+    width: 94%; 
+    height: 100px;
+    background-color: rgb(132, 132, 132, 0.43); 
+    display: flex; 
+    position: absolute;
+}
+#filter{
+    font-size: 45px;
+    color: white;
+    margin: 1% 3%;
+    position: absolute;
+}
+#line3{
+    height: 3px; 
+    width: 17.5%;  
+    margin-top: 4%;  
+    margin-left: 2%;
+    background: white; 
+    position: absolute;
+}
+
+.filterbox{
+    width: 80%;
+    height: 100%;
+    margin-left: 18%;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    justify-content:center;
+    
+}
+#bussningarBox{
+    margin: 1.1% 5%;
+    height: 70px;
+    width: 250px;
+    background-color: rgb(45, 45, 45, 0.43);
+    border-radius: 20px;
+    text-align: center;
+}
+#baklastareBox{
+    margin: 1.1% 5%;
+    height: 70px;
+    width: 250px;
+    background-color: rgb(45, 45, 45, 0.43);
+    border-radius: 20px;
+    text-align: center;
+}
+#volvoBox{
+    margin: 1.1% 5%;
+    height: 70px;  
+    width: 250px;
+    background-color: rgb(45, 45, 45, 0.43);
+    border-radius: 20px;
+    text-align: center;
+}
+.filterbox_text{
+    color: white;
+    font-size: 23px; 
+    margin-top: 3%;   
+}
+.filterbox_text2{
+    color: white;
+    font-size: 23px; 
+    margin-top: 7%;   
+}
+#clear{
+    margin-left: 3%;
+}
+
+/*  CONTAINER 4 PRODUKTER FÖR FILTER  --------------------------------------------------------------------------------------------------------------- */
+
+.container4{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: flex;
+}
+.box3{
+    margin: 1% 3%;
+    width: 94%; 
+    height: 1000px;
+    background-color: rgb(132, 132, 132, 0.43); 
+    display: flex; 
+    position: absolute;
+}
+
+#lampa{
+    width: 300px;
+    height: 300px;
+    margin: 3% 4%;
+    position: absolute;
+}
+#lampa1{
+    width: 100%;
+    height: 100%;
+}
+#lampa_box{
+    width: 290px;
+    height: 50px;
+    margin: 18.9% 4.3%;
+    position: absolute;
+    background-color: black;
+    border:1px solid white;
+    box-sizing: border-box;
+    justify-content:center;
+}
+#led{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#H4{
+    width: 300px;
+    height: 300px;
+    margin: 3% 28%;
+    position: absolute;
+}
+#H41{
+    width: 100%;
+    height: 100%;
+}
+#H4sats_box{
+    width: 300px;
+    height: 50px;
+    margin: 18.9% 28%;
+    position: absolute;
+    background-color: black;
+    border:1px solid white;
+}
+#H4sats{
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#W27{
+    width: 300px;
+    height: 300px;
+    margin: 3% 55%;
+    position: absolute;
+}
+#W271{
+    width: 100%;
+    height: 100%;
+}
+#W27_box{
+    width: 300px;
+    height: 50px;
+    margin: 18.9% 55%;
+    position: absolute;
+    background-color: black;
+    border:1px solid white;
+}
+#W27_text{
+    margin-top: 1%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#Hellaled{
+    width: 300px;
+    height: 300px;
+    margin: 3% 80%;
+    position: absolute;
+}
+#Hellaled1{
+    width: 100%;
+    height: 100%;
+}
+#Hellaled_box{
+    width: 300px;
+    height: 50px;
+    margin: 18.9% 80%;
+    position: absolute;
+    background-color: black;
+    border:1px solid white;
+}
+#Hellaled_text{
+    margin-top: 1%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* NEDRE MENY AV SIDAN --------------------------------------------------------------------------------------------------------------- */
+
+.container5{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    margin-top: 70px;
+}
+
+.nedre_meny{
+    width: 100%;
+    height: 100px;
+    margin-top: 1%;
+    box-sizing: border-box; 
+    display: flex; 
+    position: relative;
+    align-items: top; 
+    justify-content: center; 
+
+    color: rgba(0, 74, 186, 0.661);
+    font-size: 32px;
+}
+#products{
+    margin-right: 70%;
+    position: absolute;
+}
+
+#language{
+    position: absolute;
+}
+
+#company1{
+    margin-left: 70%;
+    position: absolute;
+}
+
+#line5{
+    height: 3px; 
+    width: 15%;  
+    background: rgba(0, 74, 186, 0.661); 
+    position: absolute;  
+    margin-top: 2.3%;
+    margin-right: 70%;
+
+}
+#line6{
+    height: 3px; 
+    width: 18%;  
+    background: rgba(0, 74, 186, 0.661); 
+    position: absolute;  
+    margin-top: 2.5%;
+    margin-left: 70%;
+
+}
+#line7{
+    height: 3px; 
+    width: 17%;  
+    background: rgba(0, 74, 186, 0.661); 
+    position: absolute;  
+    margin-top: 2.5%;
+
+}
+#order1{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3%;
+    color: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+    margin-right: 70%;
+    text-decoration: none;
+    z-index: 1;
+}
+#order1:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+#English{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3%;
+    text-decoration: none;
+    color: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+    z-index: 1;
+}
+#English:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+#about{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3%;
+    color: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+    margin-left: 70%;
+    text-decoration: none;
+    z-index: 1;
+}
+#about:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+
+.copyright{
+    width: 100%;
+    height: 160px;
+    box-sizing: border-box; 
+    display: flex; 
+    position: absolute;
+
+    align-items: last baseline; 
+    justify-content: center; 
+}
+
+#AB{
+    font-size: 15px;
+    color: rgba(0, 74, 186, 0.661);
+}
+
+
+/* här är kod för mobil responsivitet ----------------------------------------------------------------------------- */
+
+@media (max-width: 414px) {
+
+    body{
+        height: 2940px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    ul.navbar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(28, 118, 188, 0.9);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+    ul.navbar li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    ul.navbar li a{
+        color: white;
+        font-size: 20px;
+
+    }
+    ul.navbar li a:hover{
+        background: none;
+        color: black;
+        transition: 0.4 ease-in-out;
+    }
+    #check:checked ~ ul.navbar{
+        left: 0;
+    }
+    
+    #line {
+        margin-left: 20%;
+    }
+    #logo{
+        font-size: 25px;
+        margin-top: 5%;
+    }
+    .container1{
+        margin-bottom: 5%;
+    }
+
+    /* CONTAINER 2 PRDOUKT TEXT OBS! --------------------------------------------------------------------------------------------------------------- */
+
+    .container2{
+        height: 700px;
+    } 
+    .box1{
+        height: 670px;
+        justify-content: center;
+    }
+    #products1{
+        font-size: 50px;
+    }
+    #line1{
+        margin-top: 18%;
+        height: 2px;
+        width: 80%;
+    }
+    #line2{
+        display: none;
+    }
+    #OBS{
+        font-size: 25px;
+        width: 90%;
+        margin: 22% 0%;
+    }
+    .infobox{
+        width: 90%;
+        margin-top: 48%;
+        margin-left: 5%;
+        height: 500px;
+    }
+    .information{
+        font-size: 16px;
+    }
+    ul.information li{
+        padding: 8px;
+    }
+
+    /*  CONTAINER 3 FILTER BOXEN  --------------------------------------------------------------------------------------------------------------- */
+
+    .container3{
+        height: 260px;
+    }
+    .box2{
+        height: 200px;
+    }
+    #line3{
+        margin-top: 16%;
+        height: 2px;
+        width: 90%; 
+    }
+    .filterbox{
+        margin-left: 0;
+        width: 100%;
+        margin-top: 22%;
+        height: 50%;
+    }
+    .filterbox_text{
+        font-size: 14px;
+        margin-top: 10%;
+    }
+    .filterbox_text2{
+        font-size: 14px;
+        margin-top: 20%;; 
+    }
+    #clear{
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 3%;
+        margin-top: 3%;
+    }
+
+    /*  CONTAINER 4 PRODUKTER FÖR FILTER  --------------------------------------------------------------------------------------------------------------- */
+
+    .container4{
+        height: 1700px;
+    }
+    .box3{
+        height: 1600px;
+        justify-content: center;
+    }
+
+    #lampa{
+        margin-top: 5%;
+    }
+    #lampa_box{
+        margin: 0;
+        margin-top: 78%;
+    }
+    #led{
+        font-size: 16px;
+        margin-top: 2%;
+    }
+
+    #H4{
+        margin-top: 100%;
+    }
+    #H4sats_box{
+        margin-top: 177%;
+    }
+
+    #W27{
+        margin-top: 200%
+    }
+    #W27_box{
+        margin-top: 277%;
+    }
+    #W27_text{
+        font-size: 18px;
+        margin-top: 4%;
+    }
+
+    #Hellaled{
+        margin-top: 300%
+    }
+    #Hellaled_box{
+        margin-top: 377%;
+    }
+    #Hellaled_text{
+        font-size: 18px;
+        margin-top: 2%;
+    }
+    
+    /* CONTAINER 5 NEDRE MENYN ----------------------------------------------------------------------------- */
+
+    .container5{
+        width: 100%;
+        height: 180px;
+        background-color: white;
+        display: flex;
+        position: relative;
+        margin-top: 0%;
+    }
+
+    #products{
+        font-size: 22px;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    #line6{
+        height: 2px;
+        width: 22%;
+        margin-left: 0;
+        margin-right: 68%;  
+        margin-top: 13%;
+    }
+    #order1{
+        font-size: 18px;
+        margin-top: 15%;
+        margin-right: 68%;
+    }
+    #language{
+        font-size: 18px;
+        margin-top: 5.5%;
+    }
+    #line7{
+        height: 2px; 
+        width: 22%; 
+        margin-top: 13%;
+    }
+    #English{
+        font-size: 18px;
+        margin-top: 15%;
+        z-index: 1;
+    }
+    #company1{
+        margin-left: 70%;
+        font-size: 22px;
+        margin-top: 5%;
+    }
+    #line5{
+        height: 2px; 
+        width: 22%;  
+        margin-top: 13%;
+        margin-right: 0 ;
+        margin-left: 68%;
+    }
+    #about{
+        font-size: 15px;
+        margin-top: 15%;
+        margin-left: 68%;
+        z-index: 1;
+    }
+    #AB{
+        font-size: 12px;
+    }
+}

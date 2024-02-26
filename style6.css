@@ -1,0 +1,600 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: myFirstFont;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Sansation_Regular.ttf);
+}
+
+@font-face {
+    font-family: SansationLi;
+    src: url(Sansation_Light.ttf);
+}
+
+body{
+    background: url('images/background5.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 1600px;
+    position: relative;
+}
+
+/* Övre menyn av sidan --------------------------------------------------------------------------------------------------------------- */
+
+.container1{
+    height: 80px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.box{
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+#logo{
+    font-family: SansationLi;
+    color: rgba(0, 74, 186, 0.661);
+    font-size: 35px;
+    margin-left: 6%;
+    margin-top: 1%;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+}
+#line{
+    border-left: 3px solid rgba(0, 74, 186, 0.661); 
+    height: 55px; 
+    top: 10px;
+    left: 18.5%;
+    position: absolute;
+}
+ul.navbar {
+    float: right;
+    margin-right: 300px;
+}
+ul.navbar li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+ul.navbar li a{
+    color: rgba(0, 74, 186, 0.661);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none
+}
+ul.navbar li a:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(28, 118, 188, 0.9);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;  
+}
+
+/* CONTAINER 2 PRODUKTBILD OCH BESKRIVNING --------------------------------------------------------------------------------------------------------------- */
+
+.container2{
+    width: 100%;
+    height: 620px;
+    position: relative;
+    display: flex;
+} 
+
+.box1{
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 47%; 
+    height: 560px;
+    background-color: rgb(132, 132, 132, 0.43);  
+    position: absolute;
+}
+#H4{
+    height: 90%;
+    width: 65%;
+    margin-top: 3%;
+    margin-left: 18%;
+    border:1px solid white;
+}
+
+.box2{
+    margin-top: 3%;
+    margin-left: 50%;
+    width: 47%; 
+    height: 560px;
+    background-color: rgb(43, 43, 43, 0.43);  
+    position: absolute;
+}
+
+#H4-sats{
+    font-size: 50px;
+    color: white;
+    margin: 3% 5%;
+    position: absolute;
+}
+
+#line1{
+    height: 3px; 
+    width: 95%;  
+    margin-top: 10%;  
+    margin-left: 2%;
+    background: white; 
+    position: absolute;  
+}
+#elips{
+    position: absolute;
+    margin: 14% 3%;
+}
+#lager{
+    font-size: 28px;
+    color: white;
+    margin: 13% 7%;
+    position: absolute;
+}
+#fit{
+    font-size: 28px;
+    color: white;
+    margin: 18% 3%;
+    position: absolute;
+    font-family: SansationLi;
+}
+#price{
+    font-size: 40px;
+    color: white;
+    margin: 29% 3%;
+    position: absolute;
+}
+#OBS{
+    font-size: 20px;
+    color: white;
+    margin: 34% 3%;
+    position: absolute;
+}
+
+#note{
+    font-size: 25px;
+    color: white;
+    margin: 40% 3%;
+    position: absolute;
+}
+
+#line2{
+    height: 3px; 
+    width: 95%;  
+    margin-top: 48%;  
+    margin-left: 2%;
+    background: white; 
+    position: absolute;  
+}
+
+#order_text{
+    font-size: 23px;
+    color: white;
+    margin: 51% 3%;
+    position: absolute;
+}
+#order_text2{
+    font-size: 23px;
+    color: white;
+    margin: 55% 3%;
+    position: absolute;
+}
+#support{
+    color: rgb(28, 118, 188, 0.9);
+}
+#contact{
+    color: rgb(28, 118, 188, 0.9);
+}
+
+/* CONTAINER 3 PRODUKTBILD OCH BESKRIVNING --------------------------------------------------------------------------------------------------------------- */
+
+.container3{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+}
+
+.box3{
+    margin-left: 3%;
+    width: 94%; 
+    height: 560px;
+    background-color: rgb(43, 43, 43, 0.43);  
+    position: absolute;
+}
+#support_text{
+    font-size: 55px;
+    color: white;
+    margin: 2% 5%;
+    position: absolute;
+}
+#line3{
+    height: 3px; 
+    width: 25%;  
+    margin-top: 6%;  
+    margin-left: 2%;
+    background: white; 
+    position: absolute;  
+}
+#video_text{
+    font-size: 23px;
+    margin: 11% 2%;
+    color: white;
+    position: absolute;
+}
+#line4{
+    border-left: 3px solid white; 
+    height: 90%; 
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 30%;
+}
+
+.videobox{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    margin-left: 45%;
+}
+
+/* NEDRE MENY AV SIDAN --------------------------------------------------------------------------------------------------------------- */
+
+.container4{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+}
+
+.nedre_meny{
+    width: 100%;
+    height: 100px;
+    margin-top: 1%;
+    box-sizing: border-box; 
+    display: flex; 
+    position: relative;
+    align-items: top; 
+    justify-content: center; 
+
+    color: rgba(0, 74, 186, 0.661);
+    font-size: 32px;
+}
+#products{
+    margin-right: 70%;
+    position: absolute;
+}
+
+#language{
+    position: absolute;
+}
+
+#company1{
+    margin-left: 70%;
+    position: absolute;
+}
+
+#line5{
+    height: 3px; 
+    width: 15%;  
+    background: rgba(0, 74, 186, 0.661); 
+    position: absolute;  
+    margin-top: 2.3%;
+    margin-right: 70%;
+
+}
+#line6{
+    height: 3px; 
+    width: 18%;  
+    background: rgba(0, 74, 186, 0.661); 
+    position: absolute;  
+    margin-top: 2.5%;
+    margin-left: 70%;
+
+}
+#line7{
+    height: 3px; 
+    width: 17%;  
+    background: rgba(0, 74, 186, 0.661); 
+    position: absolute;  
+    margin-top: 2.5%;
+
+}
+#order1{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3%;
+    color: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+    margin-right: 70%;
+    text-decoration: none;
+    z-index: 1;
+}
+#order1:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+#English{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3%;
+    text-decoration: none;
+    color: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+    z-index: 1;
+}
+#English:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+#about{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 3%;
+    color: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+    margin-left: 70%;
+    text-decoration: none;
+    z-index: 1;
+}
+#about:hover{
+    color: black;
+    transition: 0.4 ease-in-out;
+}
+
+.copyright{
+    width: 100%;
+    height: 160px;
+    box-sizing: border-box; 
+    display: flex; 
+    position: absolute;
+
+    align-items: last baseline; 
+    justify-content: center; 
+}
+
+#AB{
+    font-size: 15px;
+    color: rgba(0, 74, 186, 0.661);
+}
+
+/* här är kod för mobil responsivitet ----------------------------------------------------------------------------- */
+
+@media (max-width: 414px) {
+
+    body{
+        height: 1760px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    ul.navbar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(28, 118, 188, 0.9);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+    ul.navbar li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    ul.navbar li a{
+        color: white;
+        font-size: 20px;
+
+    }
+    ul.navbar li a:hover{
+        background: none;
+        color: black;
+        transition: 0.4 ease-in-out;
+    }
+    #check:checked ~ ul.navbar{
+        left: 0;
+    }
+
+    #line {
+        margin-left: 20%;
+    }
+    #logo{
+        font-size: 25px;
+        margin-top: 5%;
+    }
+    .container1{
+        margin-bottom: 5%;
+    }
+
+    /* CONTAINER 2 PRODUKT OCH PRIS ----------------------------------------------------------------------------- */
+    
+    .container2{
+        height: 880px;
+    }  
+    .box1{
+        margin-top: 3%;
+        margin-left: 3%;
+        width: 94%; 
+        height: 300px;
+        background-color: rgb(132, 132, 132, 0.43);  
+        position: absolute;
+    }
+    #H4{
+        margin-top: 5%;
+        height: 85%;
+    }
+    
+    .box2{
+        margin-top: 75.5%;
+        margin-left: 3%;
+        width: 94%; 
+        height: 560px;
+        background-color: rgb(43, 43, 43, 0.43);  
+        position: absolute;
+    }
+    
+    #H4-sats{
+        font-size: 30px;
+    }
+
+    #line1{
+        margin-top: 13%;  
+        height: 2px;
+    }
+    #elips{
+        margin: 20% 4%;
+        height: 10px;
+        width: 10px;
+    }
+    #lager{
+        font-size: 20px;
+        margin: 18% 11%;
+    }
+    #fit{
+        font-size: 19px;
+        margin: 28% 4%;
+    }
+    #price{
+        font-size: 28px;
+        margin: 45% 4%;
+    }
+    #OBS{
+        font-size: 16px;
+        margin: 54% 4%;
+    }
+    
+    #note{
+        font-size: 20px;
+        margin: 70% 4%;
+    }
+    
+    #line2{
+        height: 2px;
+        margin-top: 115%;  
+    }
+    
+    #order_text{
+        font-size: 16px;
+        margin-top: 120%;
+        margin-left: 4%;
+    }
+    #order_text2{
+        font-size: 16px;
+        margin-top: 128%;
+        margin-left: 4%;
+    }
+
+    /* CONTAINER 3 PRODUKTBILD OCH BESKRIVNING --------------------------------------------------------------------------------------------------------------- */
+
+    #support_text{
+        font-size: 40px;
+        margin-left: 20%;
+    }
+    #line3{
+        height: 2px; 
+        width: 75%;  
+        margin-top: 15%;  
+        margin-left: 10%;
+    }
+    #video_text{
+        text-align: center;
+        font-size: 23px;
+        margin-top: 23%;
+
+    }
+    #line4{
+        display: none;
+    }
+    .videobox{
+        width: 350px;
+        height: 300px;
+        margin-left: 4%;
+        margin-top: 40%;
+    }
+
+    /* CONTAINER 4 NEDRE MENYN ----------------------------------------------------------------------------- */
+
+    .container4{
+        width: 100%;
+        height: 180px;
+        background-color: white;
+        display: flex;
+        position: relative;
+        margin-top: 0%;
+    }
+
+    #products{
+        font-size: 22px;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    #line6{
+        height: 2px;
+        width: 22%;
+        margin-left: 0;
+        margin-right: 68%;  
+        margin-top: 13%;
+    }
+    #order1{
+        font-size: 18px;
+        margin-top: 15%;
+        margin-right: 68%;
+    }
+    
+    #language{
+        font-size: 18px;
+        margin-top: 5.5%;
+    }
+    #line7{
+        height: 2px; 
+        width: 22%; 
+        margin-top: 13%;
+    }
+    #English{
+        font-size: 18px;
+        margin-top: 15%;
+        z-index: 1;
+    }
+    
+    #company1{
+        margin-left: 70%;
+        font-size: 22px;
+        margin-top: 5%;
+    }
+    #line5{
+        height: 2px; 
+        width: 22%;  
+        margin-top: 13%;
+        margin-right: 0 ;
+        margin-left: 68%;
+    }
+    #about{
+        font-size: 15px;
+        margin-top: 15%;
+        margin-left: 68%;
+        z-index: 1;
+    }
+
+    #AB{
+        font-size: 12px;
+    }
+}
