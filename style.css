@@ -34,7 +34,15 @@ body{
     display: flex;
 }
 
-.logo{
+#timeDisplay{
+    position:  absolute;
+    font-size: 30px;
+    color: rgba(0, 74, 186, 0.661);
+    margin-top: 1.2%;
+    margin-left: 20%;
+}
+
+#logo{
     font-family: SansationLi;
     color: rgba(0, 74, 186, 0.661);
     font-size: 35px;
