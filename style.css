@@ -96,6 +96,13 @@ ul li a:hover{
 #check{
     display: none;  
 }
+#like_button_container{
+    position: absolute;
+    color: rgb(28, 118, 188, 0.9);
+    font-size: 20px;
+    margin-left: 87%;
+    margin-top: 0.9%;
+}
 
 /* Här börjar första sidans innehåll   ----------------------------------------------------------------------------- */
 
