@@ -8,80 +8,81 @@
     <meta name="author" content="Valter Thomas Fyrberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Webbsite used for selling reserve and stock products">
-    <link rel="stylesheet" href="style6.css" type="text/css">
     <script src="https://kit.fontawesome.com/4d1d127128.js" crossorigin="anonymous"></script>
-</head>
-
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head> 
 
 <body>
-    <div class="container1">
-        <div class="box">
-            <a href="index.html" id="logo">Glappfri</a>
-            <div id="line"></div>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            
-            <ul class="navbar">
-                <li><a href="products.html">Baklastare tappar & bussningar</a></li>
-                <li><a href="products.html">Baklastare lagervaror</a></li>
-                <li><a href="products.html">Volvo Lv Lagervaror</a></li>
-                <li><a href="support.html">Få hjälp</a></li>
-            </ul>        
-        </div>
-    </div>
-
-    <div class="container2">
-        <div class="box1">
-            <img src="images/H4sats.jpg" alt="H4sats" id="H4">
-        </div>
-        <div class="box2">
-            <p id="H4-sats">H4-sats, ombyggnad hytt</p>
-            <div id="line1"></div>
-            <img src="images/Ellipse 22.png" alt="grön" id="elips">
-            <p id="lager">5 st i lager</p>
-            <p id="fit">Passar: 621/641/622/642(ej tidiga smalhytt, aggr.nr -992/621 och -2532/641)</p>
-            <p id="price">1 895 kr/sats</p>
-            <h6 id="OBS">Observera, alla priser är exkl. moms och frakt.</h6>
-            <p id="note">Anmärkning: Ref H4-0623Hella H4 insatser, fästplåtar i 2 mm rostfritt, rostfria monteringsskruvar och monteringsanvisning</p>
-            <div id="line2"></div>
-            <p id="order_text">Beställning görs via Telefon eller mail (<a href="company.html" id="contact">kontakt </a>)</p>
-            <p id="order_text2">Instruktioner för beställning finns på <a href="support.html" id="support">Support </a></p>
-        </div>
-    </div>
-
-    <div class="container3">
-        <div class="box3">
-            <p id="support_text">Demo Video</p>
-            <div id="line3"></div>
-            <p id="video_text">Denna video visar produkten i användning</p>
-            <div id="line4"></div>
-            <div class="videobox">
-                <video controls src="lysenvideo.mp4" width="100%" height="100%"></video>
+    <div class="container_menu_up">
+        <div class="white_box">
+            <div class="logo_box">
+                <a href="index.html" id="logo">Glappfri</a>
+                <div id="blue_line"></div>
+            </div>
+            <div class="menu_box">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="company.html">Om oss/Kontakt</a></li>
+                    <li><a href="support.html">Få hjälp</a></li>
+                    <li><a href="none.html">In English</a></li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <div class="container4">
-        <div class="nedre_meny">
-            <div id="line5"></div>
-            <div id="line6"></div>
-            <div id="line7"></div>
-            <p id="language">Language/Språk</p>
-            <p id="products">Produkter</p>
-            <p id="company1">Företaget</p>
+    <div class="item_container">
+        <div id="item_img">
+            <img src="images/H4sats.jpg" alt="H4sats" id=h4sats>
+        </div>
+        <div id="item_desc">
+            <div class="text_box">
+                <p id="H4-sats">H4-sats, ombyggnad hytt</p>
+                <div id="white_line"></div>
+                <img src="images/Ellipse 22.png" alt="grön" id="elips">
+                <p id="lager">5 st i lager</p>
+                <p id="fit">Passar: 621/641/622/642(ej tidiga smalhytt, aggr.nr -992/621 och -2532/641)</p>
+                <p id="price">1 895 kr/sats</p>
+                <h6 id="Obs">Observera, alla priser är exkl. moms och frakt.</h6>
+                <p id="note">Anmärkning: Ref H4-0623 Hella H4 insatser, fästplåtar i 2 mm rostfritt, rostfria monteringsskruvar och monteringsanvisning</p>
+                <div id="white_line"></div>
+                <p id="order_text">Beställning görs via Telefon eller mail (<a href="company.html" id="contact">kontakt </a>)</p>
+                <p id="order_text">Instruktioner för beställning finns på (<a href="support.html" id="support">Support </a>)</p>
+            </div>
+        </div>
+    </div>
+    <div class="item_video_container">
+        <div class="demo_box">
+            <p id="demo_text">Demo Video</p>
+            <div id="white_line"></div>
+            <p id="demo_desc">Denna video visar produkten i användning</p>
+        </div>
+        <div id="big_line"></div>
+        <div class="demo_video_box">
+            <video controls src="images/lysenvideo.mp4" width="100%" height="100%"></video>
+        </div>
+    </div>
 
-            <a href="none.html" id="English">In English</a>
-            <a href="products.html" id="order1">Beställ</a>
-            <a href="company.html" id="about">Om oss / Kontakt</a>
-
-            <div class="copyright">
-                <p id="AB">Glappfri.nu / Eketorn Trailer AB 2024</p>
+    <div class="container_menu_down">
+        <div class="container_flex">
+            <div class="menu_text">
+                <p class="text_down">Produkter</p> 
+                <div class="line"></div>
+                <a href="products.html" class="text_down2">Beställ</a>      
+            </div>
+            <div class="menu_lines">
+                <p class="text_down">Language/Språk</p>
+                <div class="line"></div>
+                <a href="none.html" class="text_down2">In English</a>
+            </div>
+            <div class="menu_choice">
+                <p class="text_down">Företaget</p>
+                <div class="line"></div>
+                <a href="company.html" class="text_down2">Om oss / Kontakt</a>
             </div>
         </div>
     </div>
 </body>
-
-
-</html>

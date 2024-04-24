@@ -8,123 +8,170 @@
     <meta name="author" content="Valter Thomas Fyrberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Webbsite used for selling reserve and stock products">
-    <link rel="stylesheet" href="style5.css" type="text/css">
     <script src="https://kit.fontawesome.com/4d1d127128.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script2.js"></script>
-</head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head> 
 
 <body>
-    <div class="container1">
-        <div class="box">
-            <a href="index.html" id="logo">Glappfri</a>
-            <div id="line"></div>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul class="navbar">
-                <li><a href="products.html">Baklastare tappar & bussningar</a></li>
-                <li><a href="products.html">Baklastare lagervaror</a></li>
-                <li><a href="products.html">Volvo Lv Lagervaror</a></li>
-                <li><a href="support.html">Få hjälp</a></li>
-            </u>        
-        </div>
-    </div>
-
-    <div class="container2">
-        <div class="box1">
-            <p id="products1">Produkter</p>
-            <div id="line1"></div>
-            <div id="line2"></div>
-            <div id="rectangle"></div>
-            <p id="OBS">OBS! Vi har ingen fysisk butik, besök endast efter överenskommelse</p>
-
-            <div class="infobox">
-                <button id="toggleInformation">Visa text / Ta bort text</button>
-                <ul class="information">
-                    <li><p>Reservdelar passande Volvo lastbilar och entreprenadmaskiner. Att spåra "svåra" delar har blivit något av en specialitet.</p></li>
-                    <li><p>Tappar och bussningar till lastaggregatet på BM baklastare är vår specialitet där vi är ensamma på marknaden att erbjuda dessa. Vi har ett komplett sortiment till lastaggregatet på LM 218, 422, 620/640, 621/641 & 622/642</p></li>
-                    <li><p>Reservdelar till Volvo BM baklastare, både nytillverkat och nytt från gamla lager (sk NOS)</p></li>
-                    <li><p>Delar till 60-, 70- och 80-tals Volvo LV är en annan av våra specialiteter. Vi lagerför ett antal delar till L485 Viking, N/F/86/88/89 och N/F/10/12 och kan genom ett stort kontaktnät i Sverige och Europa ordna mycket av sådant som vi inte har i lager. Fråga!</p></li>
-                    <li><p>Donaldsson och MANN filter - vi löser ditt filterbehov</p></li>
+    <div class="container_menu_up">
+        <div class="white_box">
+            <div class="logo_box">
+                <a href="index.html" id="logo">Glappfri</a>
+                <div id="blue_line"></div>
+            </div>
+            <div class="menu_box">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="company.html">Om oss/Kontakt</a></li>
+                    <li><a href="support.html">Få hjälp</a></li>
+                    <li><a href="none.html">In English</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="container3">
-        <div class="box2">
-            <button id="filter">Filter</button>
-            <div id="line3"></div>
-            <div class="filterbox">
-                <div id="bussningarBox">
+    <div class="container_products_flex">
+        <div class="flex_left">
+            <p id="company_title">Produkter</p>
+            <div id="white_line"></div>
+            <p id="OBS">OBS! Vi har ingen fysisk butik, besök endast efter överenskommelse</p> 
+        </div>
+        <div id="big_line"></div>
+        <div class="dynamic_textbox">
+            <ul class="dynamic_information">
+                <li><p>Reservdelar passande Volvo lastbilar och entreprenadmaskiner. Att spåra "svåra" delar har blivit något av en specialitet.</p></li>
+                <li><p>Tappar och bussningar till lastaggregatet på BM baklastare är vår specialitet där vi är ensamma på marknaden att erbjuda dessa. Vi har ett komplett sortiment till lastaggregatet på LM 218, 422, 620/640, 621/641 & 622/642</p></li>
+                <li><p>Reservdelar till Volvo BM baklastare, både nytillverkat och nytt från gamla lager (sk NOS)</p></li>
+                <li><p>Delar till 60-, 70- och 80-tals Volvo LV är en annan av våra specialiteter. Vi lagerför ett antal delar till L485 Viking, N/F/86/88/89 och N/F/10/12 och kan genom ett stort kontaktnät i Sverige och Europa ordna mycket av sådant som vi inte har i lager. Fråga!</p></li>
+                <li><p>Donaldsson och MANN filter - vi löser ditt filterbehov</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filter_container">
+        <div class="filter_flex">
+            <div class="filter_box">
+                <p id="filter">Filter</p>
+            </div>
+            <div class="filter_choices">
+                <div class="choices_box">
                     <p class="filterbox_text">Baklastare tappar & bussningar</p>
                 </div>
-                <div id="baklastareBox">
-                    <p class="filterbox_text2">Baklastare lagervaror</p>
+                <div class="choices_box">
+                    <p class="filterbox_text">Baklastare lagervaror</p>
                 </div>
-                <div id="volvoBox">
-                    <p class="filterbox_text2">Volvo LV lagervaror</p>
+                <div class="choices_box">
+                    <p class="filterbox_text">Volvo LV lagervaror</p>
                 </div>
-            <img src="images/clear.png" alt="Clear" id="clear">
             </div>
-
-        </div>
-    </div>
-
-    <div class="container4">
-        <div class="box3">
-            <a href="item.html"id="lampa">
-                <img src="images/lampa1.png" id="lampa1">
-            </a>
-            <a href="item.html"id="H4">
-                <img src="images/H4sats.jpg" alt="H4sats" id="H41">
-            </a>
-            <a href="item.html"id="W27">
-                <img src="images/27W-1.jpg" alt="27W" id="W271">
-            </a>
-            <a href="item.html"id="Hellaled">
-                <img src="images/Hellaled-1.jpg" alt="Hellaled" id="Hellaled1">
-            </a>
-
-            <div id="lampa_box">
-                <p id="led">LED-sats hel-, halvljus strålkastare, ombyggnad hytt</p>
-            </div>
-            <div id="H4sats_box">
-                <p id="H4sats">H4-sats, ombyggnad hytt</p>
-            </div>
-            <div id="W27_box">
-                <p id="W27_text">Strålkastare originalutförande, hytt</p>
-            </div>
-            <div id="Hellaled_box">
-                <p id="Hellaled_text">Baklykta trekammare, Hella LED 10-30V</p>
-            </div>
-    
-        </div>
-    </div>
-    
-    <div class="container5">
-        <div class="nedre_meny">
-            <div id="line5"></div>
-            <div id="line6"></div>
-            <div id="line7"></div>
-            <p id="language">Language/Språk</p>
-            <p id="products">Produkter</p>
-            <p id="company1">Företaget</p>
-
-            <a href="none.html" id="English">In English</a>
-            <a href="products.html" id="order1">Beställ</a>
-            <a href="company.html" id="about">Om oss / Kontakt</a>
-
-            <div class="copyright">
-                <p id="AB">Glappfri.nu / Eketorn Trailer AB 2024</p>
+            <div class="clear">
+                <img src="images/clear.png" alt="Clear" id="clearimage">
             </div>
         </div>
     </div>
 
+    <div class="products_container">
+        <div class="products_box">
+            <div class="products_grid">
+                <div class="products_item">
+                    <a href="item.html" class="text_desc">
+                        <div><img src="images/27W-1.jpg" alt="lampa" class="products_images">
+                            <div class="product_desc">
+                                <p>Exempel Text</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products_item">
+                    <a href="item.html" class="text_desc">
+                        <div><img src="images/H4sats.jpg" alt="lampa" class="products_images">
+                            <div class="product_desc">
+                                <p>Exempel Text</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products_item">
+                    <a href="item.html" class="text_desc">
+                        <div><img src="images/Hellaled-1.jpg" alt="lampa" class="products_images">
+                            <div class="product_desc">
+                                <p>Exempel Text</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products_item">
+                    <a href="item.html" class="text_desc">
+                        <div><img src="images/brytare1.png" alt="lampa" class="products_images">
+                            <div class="product_desc">
+                                <p>Exempel Text</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products_item">
+                    <a href="item.html" class="text_desc">
+                        <div><img src="images/stoppwire.jpg" alt="lampa" class="products_images">
+                            <div class="product_desc">
+                                <p>Exempel Text</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products_item">
+                    <a href="item.html" class="text_desc">
+                        <div><img src="images/backspegel.jpg" alt="lampa" class="products_images">
+                            <div class="product_desc">
+                                <p>Exempel Text</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="products_item">
+                    <a href="item.html" class="text_desc">
+                        <div><img src="images/las.jpg" alt="lampa" class="products_images">
+                            <div class="product_desc">
+                                <p>Exempel Text</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products_item">
+                    <a href="item.html" class="text_desc">
+                        <div><img src="images/las2.jpg" alt="lampa" class="products_images">
+                            <div class="product_desc">
+                                <p>Exempel Text</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_menu_down">
+        <div class="container_flex">
+            <div class="menu_text">
+                <p class="text_down">Produkter</p> 
+                <div class="line"></div>
+                <a href="products.html" class="text_down2">Beställ</a>      
+            </div>
+            <div class="menu_lines">
+                <p class="text_down">Language/Språk</p>
+                <div class="line"></div>
+                <a href="none.html" class="text_down2">In English</a>
+            </div>
+            <div class="menu_choice">
+                <p class="text_down">Företaget</p>
+                <div class="line"></div>
+                <a href="company.html" class="text_down2">Om oss / Kontakt</a>
+            </div>
+        </div>
+    </div>
 
 </body>
-
-
-</html>

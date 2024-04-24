@@ -8,126 +8,122 @@
     <meta name="author" content="Valter Thomas Fyrberg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Webbsite used for selling reserve and stock products">
-    <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://kit.fontawesome.com/4d1d127128.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head> 
 
 <body>
-    <div class="container1">
-        <div class="box">
-            <a href="index.html" id="logo">Glappfri</a>
-            <div id="timeDisplay"></div>
-            <div id="like_button_container"></div>  
-            <div class="line"></div>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a href="products.html">Baklastare tappar & bussningar</a></li>
-                <li><a href="products.html">Baklastare lagervaror</a></li>
-                <li><a href="products.html">Volvo Lv Lagervaror</a></li>
-                <li><a href="support.html">Få hjälp</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-    <script src="like_button.js"></script>
-
-    <div class="container2">
-        <div class="box1">
-            <div id="rectangle"></div>
-            <div id="Glappfrinu">Glappfri.nu</div>
-            <div id="line1"></div>
-            <p id="hemtext">Vi löser dina tunga reservdelsbehov</p>
-            <p id="order">Beställ här!</p> 
-        </div> 
-
-        <div class="box2">
-            <a href="http://www.eketorn.se/" class="eketornse" target="_blank">
-                <img src="images/image2.png" alt="Eketorn Trailer" class="pic1" id="image2">
-            </a>
-            <p id="EketornTrailer">Eketorn Trailer AB</p>
-            <p id="Sundsvall">Sundssvallsföretag sedan 2009</p>
-        </div>
-    </div>
-
-    <div class="container3">
-        <img src="images/bilväg.png" alt="cartrack" class="cartrack">
-        <img src="images/bilväg.png" alt="cartrack" class="cartrack2">
-        <img src="images/bilväg.png" alt="cartrack" class="cartrack3">
-        <img src="images/bilväg.png" alt="cartrack" class="cartrack4">
-        <img src="images/bilväg.png" alt="cartrack" class="cartrack5">
-
-        <div class="com_icons">
-            <a href="company.html">
-                <img src="images/phone.png" alt="phone" class="phone">
-            </a>
-            <a href="company.html">
-                <img src="images/mail.png" alt="mail" class="mail">
-            </a>
-            <a href="support.html">
-                <img src="images/chatt.png" alt="chatt" class="chatt">
-            </a>
-            <a href="https://m.facebook.com/profile.php/?id=100069404354807&name=xhp_nt__fb__action__open_user" target="_blank">
-                <img src="images/facebook.png" alt="facebook" class="facebook">
-            </a>
-        </div>
-    </div>
-
-    <div class="container4">
-        <div class="box3">
-            <p id="erbjuder">Vad erbjuder vi?</p>
-            <div id="line2"></div>
-            <div id="rectangle3"></div>
-        </div>
-
-        <div class="box4">
-            <div id="rectangle2"></div>
-            <a href="products.html" id="baklastare">Baklastare tappar & bussningar</a>
-            <a href="products.html" id="baklastare_lager">Baklastare lagervaror</a>
-            <a href="products.html" id="Volvo">Volvo LV lagervaror</a>
-
-            <div id="rectangle4"></div>
-            <div id="rectangle5"></div>
-            <div id="rectangle6"></div>
-        </div>
-
-        <div class="pictures">
-            <img src="images/bussningar.png" alt="bussningar" class="bussningar">
-            <img src="images/lampa1.png" alt="lampa" class="lampa">
-            <img src="images/brytare1.png" alt="brytare" class="brytare">
-            <a href="company.html" class="filterbox">
-                <img src="images/filter.png" alt="filter" class="filter">
-            </a>
-            <p id="filtertext">Vi kan även leverera Donaldsson och Mann filter till de flesta tillämpningar. Skicka din förfrågan till oss</p>
-        </div>
-    </div>
-
-    <div class="container5">
-        <div class="nedre_meny">
-            <div id="line3"></div>
-            <div id="line4"></div>
-            <div id="line5"></div>
-            <p id="language">Language/Språk</p>
-            <p id="products">Produkter</p>
-            <p id="company">Företaget</p>
-
-            <a href="none.html" id="English">In English</a>
-            <a href="products.html" id="order1">Beställ</a>
-            <a href="company.html" id="about">Om oss / Kontakt</a>
-
-            
-            <div class="copyright">
-                <p id="AB">Glappfri.nu / Eketorn Trailer AB 2024</p>
+    <div class="container_menu_up">
+        <div class="white_box">
+            <div class="logo_box">
+                <a href="index.html" id="logo">Glappfri</a>
+                <div id="blue_line"></div>
+            </div>
+            <div class="menu_box">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="company.html">Om oss/Kontakt</a></li>
+                    <li><a href="support.html">Få hjälp</a></li>
+                    <li><a href="none.html">In English</a></li>
+                </ul>
             </div>
         </div>
     </div>
 
+    <div class="container_main_info">
+        <div class="glappfri_box">
+            <div id="grey_box1">
+                <div id="Glappfrinu">Glappfri.nu</div>
+                <div id="white_line"></div>
+                <p id="hemtext">Vi löser dina tunga reservdelsbehov</p>
+                <p id="order">Beställ här!</p> 
+                <div id="blue_rectangle"></div>
+            </div>
+        </div>
+        <div class="eketorn_box">
+            <div id="grey_box2">
+                <a href="http://www.eketorn.se/" target="_blank">
+                    <img src="images/image2.png" alt="Eketorn Trailer" id="image2">
+                </a>
+                <p id="EketornTrailer">Eketorn Trailer AB</p>
+                <p id="Sundsvall">Sundssvallsföretag sedan 2009</p>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container_communication">
+        <img src="images/bilväg.png" alt="cartrack" id="cartrack">
+        <img src="images/bilväg.png" alt="cartrack" id="cartrack">
+        <img src="images/bilväg.png" alt="cartrack" id="cartrack">
+        <img src="images/bilväg.png" alt="cartrack" id="cartrack">
+        <img src="images/bilväg.png" alt="cartrack" id="cartrack">
+
+        <div class="com_icons">
+            <a href="company.html">
+                <img src="images/phone.png" alt="phone" id="phone">
+            </a>
+            <a href="company.html">
+                <img src="images/mail.png" alt="mail" id="mail">
+            </a>
+            <a href="support.html">
+                <img src="images/chatt.png" alt="chatt" id="chatt">
+            </a>
+            <a href="https://m.facebook.com/profile.php/?id=100069404354807&name=xhp_nt__fb__action__open_user" target="_blank">
+                <img src="images/facebook.png" alt="facebook" id="facebook">
+            </a>
+        </div>
+    </div>
+
+    <div class="container_offer">
+        <div class="grey_box3">
+            <p id="offer_text">Vad erbjuder vi?</p>
+            <hr id="line_under_offer"></hr>
+
+            <div class="grey_box4">
+                <div id="blue_rectangle2"></div>
+
+                <a href="products.html" id="offer_text2">Baklastare tappar & bussningar</a>
+                <a href="products.html" id="offer_text2">Baklastare lagervaror</a>
+                <a href="products.html" id="offer_text2">Volvo LV lagervaror</a>
+            </div>
+
+            <div class="grid_container">
+                <div class="grid">
+                    <img src="images/lampa1.png" class="img_re"></img>
+                    <img src="images/bussningar.png" class="img_re"></img>
+                    <img src="images/brytare1.png" class="img_re"></img>
+                </div>
+            </div>
+
+            <p id="filtertext">Vi kan även leverera Donaldsson och Mann filter till de flesta tillämpningar. Skicka din förfrågan till oss</p>
+            <a href="company.html"><img src="images/filter.png" alt="filter"></a>
+            <div id="blue_rectangle"></div>
+        </div>
+    </div>
+
+    <div class="container_menu_down">
+        <div class="container_flex">
+            <div class="menu_text">
+                <p class="text_down">Produkter</p> 
+                <div class="line"></div>
+                <a href="products.html" class="text_down2">Beställ</a>      
+            </div>
+            <div class="menu_lines">
+                <p class="text_down">Language/Språk</p>
+                <div class="line"></div>
+                <a href="none.html" class="text_down2">In English</a>
+            </div>
+            <div class="menu_choice">
+                <p class="text_down">Företaget</p>
+                <div class="line"></div>
+                <a href="company.html" class="text_down2">Om oss / Kontakt</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

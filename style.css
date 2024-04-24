@@ -1,10 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
     font-family: sansationR;
-    text-decoration: none;
-    list-style: none;
 }
 
 @font-face {
@@ -18,71 +15,67 @@
 }
 
 body{
-    font-family: sansationR;
-    background: url('images/background5.jpg') center/cover no-repeat;
+    background-image: url(images/background5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* HÄR BÖRJAR TOPPEN MENYN AV SIDAN ----------------------------------------------------------------------------- */
+
+.container_menu_up{
+    height: 8.5vh;
     width: 100%;
-    height: 1900px;
     position: relative;
 }
 
-/* HÄR BÖRJAR TOPPEN AV SIDAN ----------------------------------------------------------------------------- */
-
-.container1{
-    height: 80px;
-    width: 100%;
-    position: relative;
-    display: flex;
-}
-
-#timeDisplay{
-    position:  absolute;
-    font-size: 30px;
-    color: rgba(0, 74, 186, 0.661);
-    margin-top: 1.2%;
-    margin-left: 20%;
-}
-
-#logo{
-    font-family: SansationLi;
-    color: rgba(0, 74, 186, 0.661);
-    font-size: 35px;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 6%;
-    margin-top: 1%;
-}
-.box{
-    background: white;
+.white_box{
     height: 100%;
     width: 100%;
-    position: absolute;
-}
-.line {
-    border-left: 3px solid rgba(0, 74, 186, 0.661); 
-    height: 55px; 
-    position: absolute;
-    top: 10px;
-    left: 18.5%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
-ul {
-    float: right;
-    margin-right: 300px;
+.logo_box{
+    width: 20%;
+    height: 100%;
+    text-align: center;
 }
-ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-ul li a{
+#logo{
+    font-size: clamp(30px, 2.3vw, 4vh);
+    top: 25%;
+    left: 6%;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
     color: rgba(0, 74, 186, 0.661);
-    font-size: 20px;
-    padding: 7px 13px;
-    border-radius: 3px;
+    font-family: SansationLi;
 }
-ul li a:hover{
-    color: black;
-    transition: 0.4 ease-in-out;
+#blue_line{
+    border-left: 3px solid rgba(0, 74, 186, 0.661); 
+    height: 80%;
+    margin-left: 90%;
+    margin-top: 2%;
+}
+
+.menu_box{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+ul.menu li{
+    display: inline-block;
+    margin: 0 5vh;
+}
+ul.menu li a{
+    color: rgba(0, 74, 186, 0.661);
+    font-size: clamp(10px, 1.3vw, 3vh);
+    text-decoration: none;
 }
 .checkbtn{
     font-size: 30px;
@@ -96,1019 +89,996 @@ ul li a:hover{
 #check{
     display: none;  
 }
-#like_button_container{
-    position: absolute;
-    color: rgb(28, 118, 188, 0.9);
-    font-size: 20px;
-    margin-left: 87%;
-    margin-top: 0.9%;
-}
 
 /* Här börjar första sidans innehåll   ----------------------------------------------------------------------------- */
 
-.container2{
+.container_main_info{
+    margin-top: 7vh;
     width: 100%;
-    height: 300px;
+    height: 23vh;
     display: flex;
-    position: relative;   
+    position: relative; 
+    justify-content: space-between;
+    align-items: stretch;
 }
 
-.box1{
-    background-color: rgb(132, 132, 132, 0.43); 
-    height: 200px; 
-    width: 55%; 
-    display: flex; 
-    align-items: top; 
-    justify-content: center; 
-    margin-top: 5%; 
-    margin-left: 3%; 
-    position: absolute;
-}
-
-#rectangle{
-    background-color: rgb(28, 118, 188, 0.9); 
-    height: 20px; 
-    width: 100%; 
-    box-sizing: border-box; 
-    display: flex; 
-    position: absolute; 
-    margin-top: 17.2%;
-}
-
-#Glappfrinu{ 
-    margin-top: 0.5%; 
-    color: white; 
-    font-size: 50px; 
-    position: absolute;
-} 
-
-#line1{
-    height: 3px; 
-    width: 83%;  
-    background: white; 
-    position: absolute;  
-    display: flex;
-    align-items: top; 
-    justify-content: center; 
-    margin-top: 7%;  
-}
-
-#hemtext{
-    color: white;
-    position: absolute; 
-    font-size: 35px; 
-    margin-top: 8%;
-    font-family: SansationLi; 
-}
-
-#order{
-    color: white;
-    position: absolute; 
-    font-size: 35px; 
-    margin-top: 12%;
-    font-family: SansationLi; 
-}
-
-.box2{
-    background-color: rgb(132, 132, 132, 0.43); 
-    height: 200px; 
-    width: 37%; 
-    margin-top: 5%; 
-    margin-left: 60%; 
-    box-sizing: border-box; 
-    display: flex; 
-    align-items: top; 
-    justify-content: center; 
-    position: absolute; 
-}
-
-.eketornse{
-    position: absolute;
-    height: 38%;
-    width: 50%;
-    margin-top: 2%;
-}
-
-.pic1{
-    position: absolute;
-    width: 100%;
+.glappfri_box{
+    width: 57%;
     height: 100%;
 }
-
-
-#EketornTrailer{
-    margin-top: 15%;
-    font-size: 32px;
-    color: white;
-    position: absolute;
-}
-
-#Sundsvall{
-    margin-top: 21%;
-    font-size: 22px;
-    color: white;
-    position: absolute;
-}
-
-
-/* Här börjar conatiner 3, vilket börjar med bilspåret  ----------------------------------------------------------------------------- */
-
-.container3{
-    width: 100%;
-    height: 100px;
+#grey_box1{
+    height: 100%;
+    background-color: rgb(132, 132, 132, 0.43);
+    margin-left: 5%;
     display: flex;
-    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* Center-align the text */
 }
-
-.cartrack{
-    width: 20%;
-    height: 150px;
-    opacity: 0.5;
-    position: absolute;
+#Glappfrinu{
+    margin-top: 2%; 
+    color: white; 
+    font-size: clamp(30px, 4vw, 5vh); 
 }
-
-.cartrack2{
-    width: 20%;
-    margin-left: 20%;
-    height: 150px;
-    opacity: 0.5;
-    position: absolute;
+#white_line{
+    background-color: white;
+    height: 0.3vh;
+    width: 80%;
+    margin-top: 1%;
 }
-
-.cartrack3{
-    width: 20%;
-    height: 150px;
-    margin-left: 40%;
-    opacity: 0.5;
-    position: absolute;
+#hemtext{
+    padding-top: 1.3%;
+    font-size: clamp(23px, 2.3vw, 5vh);
+    color: white;
+    font-family: SansationLi;
 }
-
-.cartrack4{
-    width: 20%;
-    height: 150px;
-    margin-left: 60%;
-    opacity: 0.5;
-    position: absolute;
+#order{
+    padding-top: 1%;
+    font-size: clamp(22px, 2vw, 4vh);
+    color: white;
+    font-family: SansationLi;
 }
-
-.cartrack5{
-    width: 20%;
-    height: 150px;
-    margin-left: 80%;
-    opacity: 0.5;
-    position: absolute;
-}
-
-.com_icons{
+#blue_rectangle{
     width: 100%;
-    height: 100px;
-    margin-top: 2.5%;
-    z-index: 1;
+    height: 2vh;
+    background-color: rgb(28, 118, 188, 0.9); 
+    margin-top: auto;
+}
+
+.eketorn_box{
+    width: 40%;
+    height: 100%;
+}
+#grey_box2{
+    height: 100%;
+    background-color: rgb(132, 132, 132, 0.43);
+    margin-right: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#image2{
+    height: clamp(70px, 7vw, 10vh);
+    width: clamp(110px, 700px, 18vw);
+    margin-top: 5%;
+}
+#EketornTrailer{
+    margin-top: 1%;
+    font-size: clamp(18px, 200px, 1.8vw);
+    color: white;
+}
+#Sundsvall{
+    margin-top: 1%;
+    font-size: clamp(15px, 170px, 1.3vw);
+    color: white;
+}
+
+/* Här börjar container 3, vilket börjar med bilspåret  ----------------------------------------------------------------------------- */
+
+.container_communication{
+    height: 9vh;
+    width: 100%;
+    margin-top: 2%;
     position: relative;
+    display: flex;
+    justify-content: space-around; 
+}
+#cartrack{
+    width: 20%;
+    height: clamp(100px, 150px, 11vw);
+    opacity: 0.5;
 }
 
-.phone{
-    width: 50px;
-    height: 50px;
-    margin-left: 20%;
+.com_icons {
     position: absolute;
-    cursor: pointer;
-    z-index: 1;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%; 
+    margin-top: 2.5%;
 }
 
-.mail{
-    width: 50px;
-    height: 50px;
-    margin-left: 40%;
-    z-index: 1;
-    position: absolute;
-    cursor: pointer;
+.com_icons img {
+    height: clamp(20px, 5vh, 5vh);
+    width: 3vw; /* Maintain aspect ratio */
 }
-
-.chatt{
-    width: 50px;
-    height: 50px;
-    margin-left: 60%;
-    z-index: 1;
-    position: absolute;
-    cursor: pointer;
-}
-
-.facebook{
-    width: 50px;
-    height: 50px;
-    margin-left: 80%;
-    z-index: 1;
-    position: absolute;
-    cursor: pointer;
-}
-
 
 /* Här är koden för: Vad erbjuder vi? ----------------------------------------------------------------------------- */
 
-.container4{
+.container_offer{
+    height: 100vh;
     width: 100%;
-    height: 1100px;
-    display: flex;
     position: relative;
 }
 
-.box3{
+.grey_box3{
+    margin: 7% 3% 0% 3%;
+    width: 94%;
+    height: 90vh;
     background-color: rgb(45, 45, 45, 0.43);
-    height: 900px; 
-    width: 94%; 
-    margin-top: 5%; 
-    margin-left: 3%; 
-
-    position: absolute;
-    display: flex; 
-    align-items: top; 
-    justify-content: center; 
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
 }
 
-#erbjuder{
-    margin-top: 1.5%;
-    font-size: 55px;
-    color: white;
-    position: absolute;
+#offer_text{
     font-family: SansationLi;
-}
-
-#line2{
-    height: 3px; 
-    width: 83%;  
-    background: white; 
-    position: absolute;  
-    margin-top: 7%; 
-}
-
-#rectangle3{
-    background-color: rgb(28, 118, 188, 0.9); 
-    height: 20px; 
-    width: 100%; 
-    box-sizing: border-box; 
-    display: flex; 
-    position: absolute;
-    margin-top: 49.5%;
-}
-
-
-#rectangle4{
-    background-color: rgb(28, 118, 188, 0.9); 
-    box-sizing: border-box; 
-    position: absolute;
-    display: none;
-
-}
-#rectangle5{
-    background-color: rgb(28, 118, 188, 0.9); 
-    box-sizing: border-box; 
-    position: absolute;
-    display: none;
-}
-#rectangle6{
-    background-color: rgb(28, 118, 188, 0.9); 
-    box-sizing: border-box; 
-    position: absolute;
-    display: none;
-}
-
-
-
-.box4{
-    background-color: rgb(132, 132, 132, 0.43); 
-    height: 120px; 
-    width: 90%; 
-    margin-top: 15%; 
-    margin-left: 5%; 
-    display: flex; 
-    position: absolute;
-
-    align-items: top; 
-    justify-content: center; 
-}
-
-#rectangle2{
-    background-color: rgb(28, 118, 188, 0.9); 
-    height: 20px; 
-    width: 100%; 
-    box-sizing: border-box; 
-    display: flex; 
-    position: absolute; 
-    margin-top: 5.8%;
-}
-
-#baklastare{
     color: white;
-    font-size: 35px;
- 
-    margin-top: 2%;
-    position: absolute; 
+    font-size: clamp(30px, 7vw, 7vh);
+    padding: 2%;
 }
 
-#baklastare_lager{
-    color: white;
-    font-size: 35px;
-    margin-right: 60%;
-
-    margin-top: 2%;
-    position: absolute; 
-}
-
-#Volvo{
-    color: white;
-    font-size: 35px;
-    margin-left: 60%;
-
-    margin-top: 2%;
-    position: absolute; 
-}
-
-#baklastare:hover{
-    color: black;
-    transition: 0.4 ease-in-out;
-}
-
-#baklastare_lager:hover{
-    color: black;
-    transition: 0.4 ease-in-out;
-}
-
-#Volvo:hover{
-    color: black;
-    transition: 0.4 ease-in-out;
-}
-
-.pictures{
+#line_under_offer{
+    height: 0.3vh;
+    background-color: white;
     width: 80%;
-    margin-left: 10%;
-    margin-top: 23%;
+    margin-bottom: 2%;
+}
+
+.grey_box4{
+    width: 95%;
+    background-color: rgb(132, 132, 132, 0.43);
+    height: 14vh;
     position: relative;
     display: flex;
-    align-items: top; 
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+#offer_text2{
+    color: white;
+    text-decoration: none;
+    font-size: clamp(20px, 3.5vw, 3.5vh);
+    flex: 1;
+    text-align: center;
+}
+#blue_rectangle2{
+    width: 100%;
+    height: 2vh;
+    background-color: rgb(28, 118, 188, 0.9); 
+    position: absolute;
+    bottom: 0;
 }
 
-.bussningar{
-    position: absolute;
-    width: 25%;
-    height: 40%;
-
+.grid_container{
+    width: 90%;
+    height: 30vh;
+    padding-top: 2%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8%;
+    place-items: center;
 }
 
-.lampa{
-    position: absolute;
-    width: 20%;
-    height:40%;
-    margin-right: 67%;
-}
-
-.brytare{
-    position: absolute;
-    width: 20%;
-    height:40%;
-    margin-left: 68%;
-}
-
-
-.filterbox{
-    width: 10%;
-    height: 15%;
-    position: absolute;
-    margin-right: 80%;  
-    margin-top: 23.5%;
-}
-
-.filter{
-    position: absolute;
-    height: 55%;
-    width: 40%;
+.img_re{
+    height: 25vh;
+    width: 17vw;
 }
 
 #filtertext{
     color: white;
-    font-size: 35px; 
-    margin-left: 12%;
-    margin-top: 23%;
-    position: absolute; 
+    font-size: clamp(23px, 1.8vw, 4vh);
+    text-align: center;
+    padding-bottom: 2%;
 }
 
+/* Här kommer innehåll för menyen längst ner på sidan ----------------------------------------------------------------------------- */
 
-
-/* Här kommer innehåll för menyen längst ner på sidan ----------------------------------------------------------------------------- */ 
-
-.container5{
+.container_menu_down{
     width: 100%;
-    height: 200px;
+    height: 17vh;
     background-color: white;
+    position: relative;
     display: flex;
-    position: relative;
-    margin-top: 6.3%;
+    justify-content: center;
 }
 
-.nedre_meny{
+.container_flex{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_lines{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu_text{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu_choice{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_down{
+    color: rgba(0, 74, 186, 0.661);
+    font-size: clamp(20px, 3.7vh, 3vw);
+    margin-bottom: 3%;
+    margin-top: 9%;
+
+}
+.text_down2{
+    color: rgba(0, 74, 186, 0.661);
+    font-size: clamp(15px, 3vh, 2.5vw);;
+    margin-top: 2%;
+    text-decoration: none;
+    text-align: center;
+}
+.line{
+    height: 3px; 
+    width: 100%;  
+    background: rgba(0, 74, 186, 0.661); 
+}
+
+
+/* HÄR BÖRJAR SUPPORT SIDANS INNEHÅLL! ---------------------------------------------------------- */
+
+.container_support{
     width: 100%;
-    height: 100px;
+    height: 55vh;
+    position: relative;
+}
+
+.support_flex{
+    margin: 5% 3% 0% 3%;
+    width: 94%; 
+    height: 55vh;
+    background-color: rgb(132, 132, 132, 0.43); 
+    position: relative;
+    display: flex;
+}
+
+.flex_left{
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#support_title{
+    font-size: 7vh;
+    color: white;
+    padding: 10%;
+}
+.support_icons{
+    display: grid;
+    grid-template-columns: repeat(2, clamp(20px, 5vw, 5vh));
+    gap: 50%;
+    place-items: center;
+    justify-content: center;
+    padding: 10%;
+    margin-bottom: 20%;
+}
+
+.truck_icons{
+    padding-top: 5%;
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#big_line{
+    border-left: 3px solid white;
+    height: 90%;
+    margin-top: 2%;
+    padding-right: 3%;
+}
+
+.dynamic_textbox{
+    width: 77%;
+    height: 100%;
+}
+
+.dynamic_information{
+    color: white;
+    font-size: clamp(20px, 2.7vh, 3vw);
+    margin-top: 2%;
+}
+ul.dynamic_information li{
+    padding: 1%;
+}
+
+.support_questions{
+    width: 100%;
+    height: 70vh;
+    position: relative; 
+}
+
+.question_flex{
+    margin: 5% 3% 0% 3%;
+    width: 90%; 
+    height: 55vh;
+    background-color: rgb(132, 132, 132, 0.43); 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+#question_title{
+    color: white;
+    font-size: clamp(28px, 4.5vh, 5vw);
+}
+#question_text{
     margin-top: 1%;
-    box-sizing: border-box; 
-    display: flex; 
-    position: relative;
-    align-items: top; 
-    justify-content: center; 
-
-    color: rgba(0, 74, 186, 0.661);
-    font-size: 32px;
+    color: white;
+    font-size: clamp(20px, 3vh, 5vw);
 }
 
-#products{
-    margin-right: 70%;
-    position: absolute;
+.question_list{
+    margin: 1% 0% 0% 1%;
+    color: white;
+    font-size: clamp(15px, 2.5vh, 2.5vw);
 }
 
-#language{
-    position: absolute;
+ul.question_list li{
+    padding: 8px;
 }
 
-#company{
-    margin-left: 70%;
-    position: absolute;
-}
+/* FORMULÄRET FÖR KONTAKT ---------------------------------------------------------------------------------------- */
 
-#line3{
-    height: 3px; 
-    width: 15%;  
-    background: rgba(0, 74, 186, 0.661); 
-    position: absolute;  
-    margin-top: 2.3%;
-    margin-right: 70%;
-
-}
-
-#line4{
-    height: 3px; 
-    width: 18%;  
-    background: rgba(0, 74, 186, 0.661); 
-    position: absolute;  
-    margin-top: 2.5%;
-    margin-left: 70%;
-
-}
-
-#line5{
-    height: 3px; 
-    width: 17%;  
-    background: rgba(0, 74, 186, 0.661); 
-    position: absolute;  
-    margin-top: 2.5%;
-
-}
-
-#order1{
-    font-size: 25px;
-    position: absolute;
-    margin-top: 3%;
-    color: rgba(0, 74, 186, 0.661);
-    cursor: pointer;
-    margin-right: 70%;
-    z-index: 1;
-}
-
-#order1:hover{
-    color: black;
-    transition: 0.4 ease-in-out;
-}
-
-#English{
-    font-size: 25px;
-    position: absolute;
-    margin-top: 3%;
-
-    color: rgba(0, 74, 186, 0.661);
-    cursor: pointer;
-    z-index: 1;
-}
-
-#English:hover{
-    color: black;
-    transition: 0.4 ease-in-out;
-}
-
-#about{
-    font-size: 25px;
-    position: absolute;
-    margin-top: 3%;
-    color: rgba(0, 74, 186, 0.661);
-    cursor: pointer;
-    margin-left: 70%;
-    z-index: 1;
-}
-
-#about:hover{
-    color: black;
-    transition: 0.4 ease-in-out;
-}
-
-
-.copyright{
+.container_form{
     width: 100%;
-    height: 160px;
-    box-sizing: border-box; 
-    display: flex; 
-    position: absolute;
-
-    align-items: last baseline; 
-    justify-content: center; 
+    height: 80vh;
+    position: relative;
 }
-
-#AB{
-    font-size: 15px;
+.contact-container{
+    margin: 2% 3%;
+    width: 100%;
+    height: 100%;
+    align-items: top;
+}
+.contact-left-title{
+    font-size: 60px;
+    color: white;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.contact-inputs{
+    width: 50%;
+    height: 50px;
+    outline: none;
+    font-size: 18px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+}
+.contact-inputs:focus{
+    border: 3px solid rgba(0, 74, 186, 0.661);
+}
+.contact-inputs::placeholder{
     color: rgba(0, 74, 186, 0.661);
 }
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 30px;
+    color: white;
+    gap: 10px;
+    background: rgba(0, 74, 186, 0.661);
+    cursor: pointer;
+}
 
-/* här är kod för mobil responsivitet ----------------------------------------------------------------------------- */
+/* Innehåll för company ---------------------------------------------------------------------------- */
 
-@media (max-width: 414px) {
+.container_company_flex{
+    margin: 5% 3% 0% 3%;
+    width: 94%; 
+    height: 35vh;
+    background-color: rgb(132, 132, 132, 0.43); 
+    position: relative;
+    display: flex;
+}
 
+#company_title{
+    color: white;
+    font-size: 5vh;
+    padding: 5%;
+}
+
+.container_cars{
+    height: 18.2vh;
+    width: 100%;
+    margin: 2% 0% 5% 0%;
+    position: relative;
+    display: flex;
+    justify-content: space-around; 
+}
+
+/* NONE.HTML ------------------------------------------------------------------------------------- */
+
+.container_progress{
+    width: 100%;
+    height: 74.5vh;
+    position: relative;
+    display: flex;
+}
+.box_none{
+    margin: 5% 3%;
+    width: 94%; 
+    height: 200px;
+    background-color: rgb(132, 132, 132, 0.43); 
+    display: flex; 
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#Progress{
+    font-size: clamp(40px, 7vh, 7vw);
+    color: white;
+}
+
+/* PRODUCTS.HTML ---------------------------------------------------------------------------------------------- */
+
+.container_products_flex{
+    margin: 5% 3% 0% 3%;
+    width: 94%; 
+    height: 50vh;
+    background-color: rgb(132, 132, 132, 0.43); 
+    position: relative;
+    display: flex;
+}
+
+#OBS{
+    width: 80%;
+    color: white;
+    font-size: 2.5vh;
+    padding-top: 30%;
+}
+
+.filter_container{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    margin-top: 5%;
+}
+
+.filter_flex{
+    margin: 0% 3% 0% 3%;
+    width: 94%; 
+    height: 13vh;
+    background-color: rgb(132, 132, 132, 0.43); 
+    display: flex;
+    align-items: center;
+}
+
+.filter_box{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#filter{
+    color: white;
+    font-size: 6vh;
+}
+
+.filter_choices{
+    height: 100%;
+    flex: 3;
+    padding-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choices_box{
+    height: 8vh;
+    width: 25%;
+    background-color: rgb(45, 45, 45, 0.43);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.filterbox_text{
+    color: white;
+    font-size: clamp(15px, 2vh, 2vw);
+}
+
+.clear{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clearimage{
+    height: 12vh;
+    width: 5vw;
+}
+
+.products_container {
+    width: 100%;
+    height: 100vh; 
+    position: relative;
+}
+
+.products_box {
+    margin: 0% 3% 0% 3%;
+    width: 94%;
+    background-color: rgb(132, 132, 132, 0.43);
+    height: 90vh;
+}
+
+.products_grid{
+    padding-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-flow: row; 
+    grid-gap: 10px; /
+}
+
+.products_item {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.products_images{
+    height: 25vh;
+    width: 15vw;
+}
+
+.product_desc{
+    background-color: black;
+    width: 100%;
+    height: 5vh;
+    margin-top: -1%;
+    border: 1px solid white;
+    margin-bottom: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_desc{
+    text-decoration: none;
+    color: white;
+}
+
+/* ITEM.HTML ---------------------------------------------------------------------------------------------- */
+
+.item_container{
+    width: 94%;
+    height: 60vh; 
+    padding: 3% 3% 0% 3%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#item_img{
+    flex: 1;
+    height: 100%;
+    background-color: rgb(132, 132, 132, 0.43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#h4sats{
+    height: 43vh;
+    width: 30vw;
+    border: 2px solid white;
+}
+
+.text_box{
+    width: 100%;
+    height: 60vh;
+    padding: 2% 0% 0% 2%;
+}
+#H4-sats{
+    color: white;
+    font-size: clamp(30px, 5.5vh, 5vw);
+}
+#elips{
+    position: absolute;
+    margin-left: 0.5%;
+    margin-top: 1.2%;
+}
+#lager{
+    margin-top: 2%;
+    color: white;
+    font-size: 2.5vh;
+    margin-left: 5%;
+    padding-bottom: 1%;
+}
+#fit{
+    font-family: SansationLi;
+    color: white;
+    font-size: clamp(25px, 3vh, 3vw); 
+    padding-bottom: 3%; 
+}
+#Obs{
+    color: white;
+    font-size: 2vh;
+    padding-bottom: 5%; 
+}
+#price{
+    color: white;
+    font-size: 4.5vh;
+}
+#note{
+    color: white;
+    font-size: clamp(23px, 3vh, 3vw);
+    padding-bottom: 4%;
+}
+#item_desc{
+    flex: 1;
+    height: 100%;
+    background-color: rgb(45, 45, 45, 0.43);
+}
+#order_text{
+    padding-top: 1%;
+    color: white;
+    font-size: clamp(20px, 2.5vh, 2.5vw);
+}
+
+.item_video_container{
+    width: 94%;
+    height: 60vh; 
+    margin: 0.5% 3% 0% 3%;
+    position: relative;
+    background-color: rgb(45, 45, 45, 0.43);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.demo_box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#demo_text{
+    padding-top: 5%;
+    color: white;
+    font-size: 5vh;
+}
+#demo_desc{
+    padding-top: 15%;
+    color: white;
+    font-size: 2.5vh;
+}
+.demo_video_box{
+    flex: 2;
+}
+
+@media only screen and (max-width: 414px) {
+    #hemtext{
+        margin-top: 4%;
+    }
+    #order{
+        margin-top: 5%;
+    }
+    .com_icons img {
+        margin-top: 50%;
+        height: 4vh;
+        width: 8vw;
+    }
+
+    .container_offer{
+        height: 150vh;
+    }
+    .grey_box3{
+        height: 140vh;
+    }
+    .grey_box4{
+        position: absolute;
+        margin-top: 20%;
+        width: 85%;
+        height: 110vh;
+        z-index: -1;
+        flex-direction: column;
+    }
+    #blue_rectangle2{
+        height: 1vh;
+    }
+    #offer_text2{
+        margin-top: 8%;
+    }
+
+    .grid_container{
+        width: 90%;
+        height: 130vh;
+        padding-top: 20%;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 110px;
+    }
+    
+    .img_re{
+        height: 25vh;
+        width: 50vw;
+    }
+
+    .text_down{
+        margin-top: 40%;
+        margin-bottom: 20%;
+    }
+    .text_down2{
+        margin-top: 10%;
+    }
+    
+    /* Support sidan ---------------------- */
+
+    .container_support{
+        width: 100%;
+        height: 120vh;
+        position: relative;
+    }
+    
+    .support_flex{
+        margin-top: 15%;
+        height: 120vh;
+        flex-direction: column;
+    }
+    
+    .flex_left{
+        width: 100%;
+        height: 70%;
+    }
+
+    #support_title{
+        font-size: 7vh;
+        color: white;
+        padding: 6%;
+    }
+    .support_icons{
+        grid-template-columns: repeat(2, clamp(90px, 5vw, 5vh));
+    }
+
+    .dynamic_textbox{
+        width: 92%;
+        margin-left: 10%;
+    }
+    .truck_icons{
+       display: none;
+    }
+    #big_line{
+        display: none;
+    }
+
+    .support_questions{
+        height: 70vh;
+    }
+    .question_flex{
+        height: 60vh;
+    }
+    #question_title{
+        margin-top: 2%;
+        margin-left: 2%;
+        color: white;
+
+    }
+    #question_text{
+        margin-top: 4%;
+    }
+    .question_list{
+        margin: 5% 0% 0% 5%;
+    }
+    .contact-inputs{
+        width: 80%;
+    }
+
+
+    /* Företags sidan ------------- */ 
+
+    .container_company_flex{
+        height: 70vh;
+        flex-direction: column;
+    }
+
+
+    /* Produkt sidan ------------- */ 
+
+    .container_products_flex{ 
+        height: 100vh;
+        flex-direction: column;
+    }
+    #OBS{
+        padding-top: 20%;
+    }
+    .filter_flex{
+        height: 18vh;
+        flex-direction: column;
+    }
+    .clear{
+        display: none;
+    }
+    .filter_choices{
+        padding-left: 0;
+    }
+
+
+    .products_container {
+        height: 450vh; 
+    }
+    .products_box {
+        height: 440vh;
+    }
+    .products_grid{
+        padding-top: 10%;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .products_images{
+        height: 40vh;
+        width: 70vw;
+    }
+    
+
+    /* Item sidan ----------------- */
+
+    .item_container{
+        height: 110vh;
+        padding: 3% 3% 0% 3%;
+        flex-direction: column;
+    }
+    
+    #item_img{
+        flex: 1;
+    }
+    #h4sats{
+        height: 25vh;
+        width: 60vw;
+        margin: 10%;
+    }
+    .text_box{
+        width: 95%;
+        padding: 4% 0% 0% 4%;
+    }
+    #elips{
+        margin-left: 0%;
+        margin-top: 2.9%;
+    }
+    #lager{
+        padding-bottom: 5%;
+    }
+    #fit{
+        padding-bottom: 10%; 
+    }
+    #Obs{
+        padding-bottom: 7%; 
+    }
+    .item_video_container{
+        height: 70vh; 
+        margin-top: 3%;
+        flex-direction: column;
+        margin-bottom: 20%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
     .checkbtn{
         display: block;
+        position: absolute; 
+        right: 2%; 
     }
-    ul{
+    ul.menu{
         position: fixed;
         width: 100%;
         height: 100vh;
         background: rgb(28, 118, 188, 0.9);
-        top: 80px;
+        top: 8.5vh;
         left: -100%;
         text-align: center;
         transition: all .5s;
         z-index: 2;
     }
-    ul li{
+    ul.menu li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    ul li a{
+    ul.menu li a{
         color: white;
         font-size: 20px;
 
     }
-    ul li a:hover{
+    ul.menu li a:hover{
         background: none;
         color: black;
         transition: 0.4 ease-in-out;
     }
-    #check:checked ~ ul{
+    #check:checked ~ ul.menu{
         left: 0;
     }
 
-    .line {
-        margin-left: 20%;
-    }
-    .logo{
-        font-size: 25px;
-        margin-top: 5%;
-    }
-    .container1{
-        margin-bottom: 5%;
-    }
-
-    /* CONTAINER 2 GLAPPFRI OCH EKETORN TRAILER ----------------------------------------------------------------------------- */
-
-    .container2{
-        height: 250px;
-    }
-    #Glappfrinu{ 
-        margin-top: 3%;
-        font-size: 25px;
-    } 
-    #rectangle{
-        margin-top: 80%;
-    }
-    #line1{
-        margin-top: 20%;
-    }
-
-    #hemtext{
-        font-size: 20px;
-        margin-top: 30%;
-        text-align: center;
-    }
-    #order{
-        font-size: 20px;
-        margin-top: 60%;
-    }
-    .eketornse{
-        margin-top: 8%;
-        height: 25%;
-        width: 65%;
-    }
-    .pic1{
-        width: 100px;
-        height: 50px;
-    }
-    #EketornTrailer{
-        margin-top: 50%;
-        font-size: 17px;
-    }
-    #Sundsvall{
-        margin-top:70%;
-        font-size: 15px;
-        text-align: center;
-    }
-
-    /* CONTAINER 3 BILVÄG OCH COM ICONS ----------------------------------------------------------------------------- */
-
-    .com_icons{
-        margin-top: 8%;
-    }
-    .cartrack{
-        width: 33.3%;
-        height: 100px;
-    }
-    .cartrack2{
-        width: 33.3%;
-        height: 100px;
-        margin-left: 33.3%
-    }
-    .cartrack3{
-        width: 33.3%;
-        height: 100px;
-        margin-left: 66.6%
-    }
-    .cartrack4{
+    #blue_line{
         display: none;
-    }
-    .cartrack5{
-        display: none;
-    }
-
-    .phone{
-        width: 25px;
-        height: 25px;
-        margin-left: 15%;
-    }
-    .mail{
-        width: 25px;
-        height: 25px;;
-        margin-left: 35%;
-    }
-    .chatt{
-        width: 25px;
-        height: 25px;
-        margin-left: 57%;
-    }
-    .facebook{
-        width: 25px;
-        height: 25px;
-        margin-left: 78%;
-    }
-
-    /* CONTAINER 4 VAD ERBJUDER VI? ----------------------------------------------------------------------------- */
-
-    .box3{
-        height: 1140px; 
-    }
-
-    #erbjuder{
-        margin-top: 1%;
-        font-size: 20px;
-        color: white;
-        position: absolute;
-    }
-    #line2{
-        height: 2px; 
-        width: 83%;  
-        background: white; 
-        position: absolute;  
-        margin-top: 10%; 
-    }
-    #rectangle3{
-        display: none;
-    }
-    
-    .box4{
-        height: 950px; 
-        width: 80%; 
-        margin-top: 20%; 
-        margin-left: 10%; 
-        margin-right: 5%;
-        text-align: center;
-    }
-    #rectangle2{
-        background-color: rgb(28, 118, 188, 0.9); 
-        height: 20px; 
-        width: 100%; 
-        box-sizing: border-box; 
-        display: flex; 
-        position: absolute; 
-        margin-top: 280.7%;
-    }
-
-    #baklastare_lager{
-        color: white;
-        font-size: 20px;
-        margin-right: 0;
-        margin-top: 4%;
-        position: absolute;
-        z-index: 1;
-    }
-    #rectangle4{
-        width: 80%;
-        height: 20px;
-        margin-top: 15%;
-        display: block;
-    }
-    .lampa{
-        width: 82.5%;
-        height: 20%;
-        margin-right: 0;
-        margin-top: 17.3%;
-    }
-    
-    #baklastare{
-        color: white;
-        font-size: 20px;
-        margin-top: 100%;
-        position: absolute; 
-        z-index: 1;
-    }
-    #rectangle5{
-        width: 80%;
-        height: 20px;
-        margin-top: 112%;
-        display: block;
-    }
-    .bussningar{
-        width: 83.5%;
-        height: 20%;
-        margin-right: 0;
-        margin-top: 114.3%;
-    }
-
-    #Volvo{
-        color: white;
-        font-size: 20px;
-        margin-left: 0;
-        margin-top: 200%;
-        position: absolute;
-        z-index: 1; 
-    }
-    #rectangle6{
-        width: 80%;
-        height: 20px;
-        margin-top: 210%;
-        display: block;
-    }
-    .brytare{
-        width: 80%;
-        height: 20%;
-        margin-left: 0;
-        margin-top: 212%;
-    }
-
-    .filterbox{
-        height: 40px;
-        margin-right: 85%;
-        margin-top: 301%;
-    }
-    .filter{
-        width: 100%;
-        height: 100%;
-    }
-    
-    #filtertext{
-        font-size: 15px;
-        text-align: center;
-        margin-top: 300%;
-    }
-
-    /* CONTAINER 5 NEDRE MENYN ----------------------------------------------------------------------------- */
-
-    .container5{
-        width: 100%;
-        height: 180px;
-        background-color: white;
-        display: flex;
-        position: relative;
-        margin-top: 40.8%;
-    }
-    
-    #products{
-        font-size: 22px;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-    #line4{
-        height: 2px;
-        width: 22%;
-        margin-left: 0;
-        margin-right: 68%;  
-        margin-top: 13%;
-    }
-    #order1{
-        font-size: 18px;
-        margin-top: 15%;
-        margin-right: 68%;
-    }
-    
-    #language{
-        font-size: 18px;
-        margin-top: 5.5%;
-    }
-    #line5{
-        height: 2px; 
-        width: 22%; 
-        margin-top: 13%;
-    }
-    #English{
-        font-size: 18px;
-        margin-top: 15%;
-        z-index: 1;
-    }
-    
-    #company{
-        margin-left: 70%;
-        font-size: 22px;
-        margin-top: 5%;
-    }
-    #line3{
-        height: 2px; 
-        width: 22%;  
-        margin-top: 13%;
-        margin-right: 0 ;
-        margin-left: 68%;
-    }
-    #about{
-        font-size: 15px;
-        margin-top: 15%;
-        margin-left: 68%;
-        z-index: 1;
-    }
-
-    #AB{
-        font-size: 12px;
     }
 }
 
 @media print{
 
-    /* HÄR BÖRJAR TOPPEN AV SIDAN ----------------------------------------------------------------------------- */
-    
-    .checkbtn{
-        display: block;
+    #blue_line{
+       display: none;
     }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgb(28, 118, 188, 0.9);
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 2;
-    }
-    ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    ul li a{
-        color: white;
-        font-size: 20px;
-
-    }
-    ul li a:hover{
-        background: none;
-        color: black;
-        transition: 0.4 ease-in-out;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-
-    .line {
-        margin-left: 9%;
-        margin-top: 3%;
-    }
-    .logo{
-        margin-top: 5%;
-    }
-
-    /* Här börjar CONTAINER 2 innehåll   ----------------------------------------------------------------------------- */
-
-    .container2{
-        height: 300px;
-    }
-    
-    #Glappfrinu{ 
-        color: rgb(28, 118, 188, 0.9);
-        font-size: 40px;
-    } 
-    #line1{
+    ul.menu li{
         display: none;
     }
-    
-    .box2{
-        margin-top: 2%;
+    .container_menu_up{
+        height: 1vh;
     }
-    #hemtext{
-        color: rgb(28, 118, 188, 0.9);
-        margin-top: 20%;
-        margin-right: 1%;
-        text-align: center;
+    .container_main_info{
+        height: 12vh;
     }
-    #order{
-        color: rgb(28, 118, 188, 0.9);
-        margin-top: 42%;
+    .container_communication{
+        height: 3vh;
     }
-
-    .eketornse{
-        margin-right: 100%;
+    .grid_container{
+        height: 20vh;
     }
-    #EketornTrailer{
-        color: rgb(28, 118, 188, 0.9);
-        margin-top: 40%;
-        margin-right: 20%;
-        text-align: center;
+    .img_re{
+        height: 17vh;
+        width: 15vw;
     }
-    #Sundsvall{
-        color: rgb(28, 118, 188, 0.9);
-        margin-top: 70%;
-        margin-right: 20%;
-        text-align: center;
+    .container_offer{
+        height: 55vh;
     }
-
-    /* Här börjar conatiner 3, vilket börjar med bilspåret  ----------------------------------------------------------------------------- */
-
-    .com_icons{
-        margin-left: 0;
-        margin-top: 6%;
-        color: rgb(28, 118, 188, 0.9);
-    }
-    
-    /* Här börjar conatiner 4, VAD ERBJUDER VI  ----------------------------------------------------------------------------- */
-
-    .container4{
-        height: 350px;
-    }
-
-    #erbjuder{
-        color: rgb(28, 118, 188, 0.9);
-    }
-    #line2{
-        display: none;
-    }
-    #baklastare{
-        font-size: 18px;
-        color: rgb(28, 118, 188, 0.9);
-    }
-    #baklastare_lager{
-        font-size: 18px;
-        color: rgb(28, 118, 188, 0.9);
-        margin-right:70%;
-
-    }
-    #Volvo{
-        font-size: 18px;
-        color: rgb(28, 118, 188, 0.9);
-        margin-left:70%;
-    }
-    .bussningar{
-        height: 200px;
-        width: 200px;
-    }
-    .lampa{
-        height: 200px;
-        width: 200px;
-        margin-right: 80%;
-    }
-    .brytare{
-        height: 190px;
-        width: 200px;
-        margin-left: 80%;
-    }
-    .filterbox{
-        display: none;
-    }
-    .filter{
-        display: none;
-    }
-    #filtertext{
-        display: none;
-    }
-    
-    /* Här kommer innehåll för menyen längst ner på sidan ----------------------------------------------------------------------------- */ 
-
-    #order1{
-        margin-top: 5%;
-    }
-
-    #English{
-        margin-top: 5%;
-    }
-    #about{
-        margin-top: 5%;
+    .container_menu_down{
+        height: 2vh;
     }
 }
